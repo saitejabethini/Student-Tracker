@@ -14,7 +14,7 @@ public class DemoStudentQuery {
 	public static void main(String[] args) {
 		SessionFactory sf = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student.class).buildSessionFactory();
 		Session s = sf.getCurrentSession();
-
+ 
 		try {
 			s.beginTransaction();
 

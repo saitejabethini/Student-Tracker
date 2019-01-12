@@ -26,7 +26,7 @@ public class Student {
 	
 	@Column(name = "email")
 	private String email;
-	
+	 
 	public Student() {
 		
 	}

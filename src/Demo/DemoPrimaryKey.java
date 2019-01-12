@@ -12,7 +12,7 @@ public class DemoPrimaryKey {
 
 		SessionFactory sf = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student.class).buildSessionFactory();
 		Session s = sf.getCurrentSession();
-		
+		 
 		try {
 			
 			System.out.println("Creating 3 student objects");
@@ -38,3 +38,4 @@ public class DemoPrimaryKey {
 		}
 	}
 }
+ 

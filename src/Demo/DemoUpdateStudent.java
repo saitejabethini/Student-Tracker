@@ -12,7 +12,7 @@ public class DemoUpdateStudent {
 	public static void main(String[] args) {
 		SessionFactory sf = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student.class).buildSessionFactory();
 		Session s = sf.getCurrentSession();
-		
+		 
 		try {
 			int stuId = 6;
 			
@@ -22,7 +22,7 @@ public class DemoUpdateStudent {
 			
 			System.out.println("Retrieving student with id: " + stuId);
 			
-			Student rs = s.get(Student.class, stuID);
+			Student rs = s.get(Student.class, stuId);
 			System.out.println("Updating student data...");
 			
 			rs.setFirstName("Saiteja");
